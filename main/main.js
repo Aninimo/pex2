@@ -1,3 +1,5 @@
+alert("hello")
+
 document.addEventListener("DOMContentLoaded", function(){
     const toggleButtons = document.querySelectorAll(".toggle-button");
     const cards = document.querySelectorAll(".cardQuestion .contentCard");
