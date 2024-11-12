@@ -80,26 +80,40 @@ fetch('blogs.json')
   })
   .catch(error => console.error('Erro ao carregar o JSON:', error));
 
-  fetch('food.json')
+fetch('food.json')
   .then(response => response.json())
   .then(data => {
-    const allFoodsContainer = document.getElementById('allFoodsContainer');
-
     if (data && Array.isArray(data) && data[0] && Array.isArray(data[0].foods)) {
       const allFoods = data[0].foods;
+      
+      const allFoodsContainer = document.getElementById('allFoodsContainer');
+      if (allFoodsContainer) {
+        allFoods.forEach(food => {
+          const foodElement = document.createElement('div');
+          foodElement.className = 'foodCard';
+          foodElement.innerHTML = `
+            <img src="${food.image}" alt="${food.name}" class="imageFood"/>
+            <h2>${food.name}</h2>
+            <a href="food.html?id=${food.id}" class="btn">Leia mais</a>
+          `;
+          allFoodsContainer.appendChild(foodElement);
+        });
+      }
 
-      allFoods.forEach(food => {
-        const foodElement = document.createElement('div');
-        foodElement.className = 'foodCard';
-
-        foodElement.innerHTML = `
-          <img src="${food.image}" alt="${food.name}" class="imageFood"/>
-          <h2>${food.name}</h2>
-          <a href="food.html?id=${food.id}" class="btn">Leia mais</a>
-        `;
-
-        allFoodsContainer.appendChild(foodElement);
-      });
+      const foodContainer = document.getElementById('foods-container');
+      if (foodContainer) {
+        const firstThreeFoods = allFoods.slice(0, 2); 
+        firstThreeFoods.forEach(food => {
+          const foodElement = document.createElement('div');
+          foodElement.className = 'foodCard';
+          foodElement.innerHTML = `
+            <img src="${food.image}" alt="${food.name}" class="imageFood"/>
+            <h4 class="foodName">${food.name}</h4>
+            <a href="food.html?id=${food.id}" class="btn">Veja a receita</a>
+          `;
+          foodContainer.appendChild(foodElement);
+        });
+      }
     } else {
       console.error('Estrutura de dados inesperada:', data);
     }
@@ -107,29 +121,3 @@ fetch('blogs.json')
   .catch(error => {
     console.error('Erro ao buscar as receitas:', error);
   });
-
-fetch('food.json')
-  .then(response => response.json())
-  .then(data => {
-    const foodContainer = document.getElementById('foods-container');
-    
-    if (data && Array.isArray(data) && data[0] && Array.isArray(data[0].foods)) {
-      const firstThreeFoods = data[0].foods.slice(0, 2);
-
-      firstThreeFoods.forEach(food => {
-        const foodElement = document.createElement('div');
-        foodElement.className = 'foodCard';
-
-        foodElement.innerHTML = `
-          <img src="${food.image}" alt="${food.name}" class="imageFood"/>
-          <h4 class="foodName">${food.name}</h4>
-          <a href="food.html?id=${food.id}" class="btn">Veja a receita</a>
-        `;
-
-        foodContainer.appendChild(foodElement);
-      });
-    } else {
-      console.error('Estrutura de dados inesperada:', data);
-    }
-  })
-  .catch(error => console.error('Erro ao carregar o JSON:', error));
