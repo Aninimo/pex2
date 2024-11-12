@@ -80,7 +80,7 @@ fetch('blogs.json')
   })
   .catch(error => console.error('Erro ao carregar o JSON:', error));
 
-fetch('food.json')
+  fetch('food.json')
   .then(response => response.json())
   .then(data => {
     if (data && Array.isArray(data) && data[0] && Array.isArray(data[0].foods)) {
