@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --darkSpringGreen: #157145;
+    --gray: #eff1ed;
+    --jade: #2dc653;
+    --footer: #495057;
+}
+
+body {
+   font-family: Arial, sans-serif;
+}
+
+ul{
+    list-style: none;
+    margin-top: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1499862858993-19de73c05adc?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); 
+}
+
+.content {
+    position: relative;
+    z-index: 1; 
+    margin-left: 4rem;
+}
+
+.span{
+  color: var(--jade);
+  font-size: 1.45rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.subtitle{
+  font-weight: bold;
+  color: var(--jade);
+}
+
+.btn{
+    padding: 1.5rem 5.5rem;
+    background-color: var(--jade);
+    border-radius: .5rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn:hover{
+    background-color: var(--darkSpringGreen);
+}
+
+.about{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.aboutContent{
+    display: flex;
+    gap: 6rem;
+}
+
+.titleAbout{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.boxChecks{
+    margin-top: 2rem;
+}
+
+.imageFlexAbout{
+  display: flex;
+  gap: 2rem;
+}
+
+.line{
+    width: 10px;
+    height: 500px;
+    background-color: var(--jade);
+}
+
+.check{
+    display: flex;
+    gap: 1rem;
+}
+
+.recommendations{
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+
+}
+.recommendationsContent{
+  text-align: center;
+}
+
+.boxCards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.card {
+    position: relative; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: calc(100% - 40px); 
+    max-width: 400px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray);
+    overflow: hidden; 
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background-color: #70e000;
+    transform: translateY(-100%); 
+    transition: transform 0.3s ease; 
+}
+
+.card:hover::before {
+    transform: translateY(0); 
+}
+
+.iconContainer {
+    width: 5.5rem;
+    height: 5.5rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 4rem; 
+    background-color: var(--jade);
+    border-radius: 50%;
+}
+
+.titleCard{
+    font-size: 1.5rem;
+}
+
+.descriptionCard{
+    flex-grow: 1; 
+    font-size: 1em;
+    line-height: 1.5; 
+    margin-top: 2rem;
+}
+
+.questions{
+    margin-top: 8rem;
+}
+
+.questionContent{
+    display: flex;
+    gap: 4rem;
+}
+
+.titleQuestions{
+    margin-bottom: 1rem;
+}
+
+.imageQuestion{
+    width: 50%; 
+    min-height: 80vh;
+}
+
+.contentCard{
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+}
+
+.headerCard{
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: var(--jade);
+  color: #FFFFFF;
+  padding: .5rem;
+}
+
+.objective{
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.sectionBlog{
+    margin-top: 6rem;
+    padding: 2rem;
+}
+
+.contentSectionBlog{
+   display: flex;
+   justify-content: space-between;
+}
+
+#blogs-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    gap: 4rem;
+}
+
+.buttonSection{
+    margin-top: 1rem;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.blogCard {
+    width: 25rem;
+    height: 40rem;
+    background-color: var(--greeen-card);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.image-blog{
+   height: 12rem;
+   margin-bottom: 1rem;
+}
+
+   
+
+.sectionFood{
+   margin-top: 6rem;
+   padding: 2rem;
+}
+
+.descriptionSection{
+    margin-top: 1rem;
+}
+
+.contentSectionFood{
+    display: flex;
+    gap: 2rem;
+}
+
+#foods-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.foodCard{
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--greeen-card);
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-bottom: 5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.foodName{
+   font-size: 1.5rem;
+   margin-bottom: 4rem;
+}
+
+.imageFood{
+   width: 300px;
+   height: 200px;
+   margin-bottom: 2rem;
+   border-radius: .5rem;
+}
+
+.imageFoodSection{
+   height: 40rem;
+   border-radius: 1rem;
+}
+  
+.footerContent{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--footer);
+    margin-top: 8rem;
+    padding: 2rem;
+    color: #FFFFFF;
+}
+
+.textsFooter h4{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mainFoodDetail{
+    padding: 2rem;
+}
+
+.contentMainFoodDetail{
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.imageBlog{
+    width: 20rem;
+}
+
+.BlogrecommendedCard {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    background-color: var(--gray);
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+}
+
+.imageBlogRecommended {
+    width: 15rem;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.BlogrecommendedCard .btn {
+    background-color: var(--jade); 
+    color: white; 
+    padding: 0.75rem 1.5rem; 
+    border-radius: 0.5rem; 
+    text-decoration: none; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block; 
+    margin-top: 1rem; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.imageFoodDetails{
+    width: 26rem;
+    height: 20rem;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    border-radius: .5rem;
+}
+
+#food-details-container{
+    display: flex;
+    gap: 4rem;
+}
+
+.imageFoodRecommended{
+    width: 15rem;
+    height: 10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+}
+
+.recommendedCard{
+    background-color: var(--gray);
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.recommendedContent .btn{
+    background-color: var(--jade); 
+    color: white; 
+    padding: 0.75rem 4.5rem; 
+    border-radius: 0.5rem; 
+    text-decoration: none; 
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block; 
+    margin-top: 1rem; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+}
+
+.whatToDo{
+    padding: 2rem;
+}
+  
+.imageToDo {
+    width: 100%;         
+    height: 10rem;        
+    margin-bottom: 3rem; 
+    display: block;      
+    object-fit: cover;  
+    border-radius: .5rem;
+}
+
+.titleToDo{
+  margin-bottom: 1rem;
+}
+
+#allBlogsContainer{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 20px;  
+  padding: 20px; 
+}
+
+#allFoodsContainer{
+   display: grid;
+   justify-content: center;
+   grid-template-columns: repeat(3, 1fr);  
+   gap: 20px;  
+  padding: 20px; 
+}  
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .aboutContent{
+        flex-direction: column;
+    }
+
+    .imageFlexAbout{
+        gap: 1rem;
+        margin-left: 1rem;
+    }
+
+    .boxAbout{
+        padding: 1rem;
+    }
+
+    .boxCards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .questionContent{
+        flex-direction: column;
+    }
+
+    .imageQuestion{
+        width: 100%;
+    }
+
+    .texts{
+        padding: 1rem;
+    }
+
+    .contentSectionBlog{
+        flex-direction: column;
+    }
+
+    #blogs-container{
+        flex-direction: column;
+    }
+
+    .blogCard {
+        width: 20rem;
+        height: 35rem;
+        text-align: center;
+    }
+
+    .image-blog{
+        width: 15rem;
+        margin-left: 1.5rem;
+    }
+
+    .buttonSection{
+        margin-top: 2rem;
+    }
+
+    .contentSectionFood{
+        flex-direction: column;
+    }
+
+    #foods-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #allFoodsContainer{
+        grid-template-columns: repeat(1, 1fr);   
+     }  
+
+     .foodCard a{
+        margin-top: 4rem;
+        padding: 1.75rem 5.5rem;
+     }
+
+     #food-details-container{
+        flex-direction: column;
+     }
+   
+     .imageFoodDetails{
+        width: 20rem;
+     }
+
+     #allBlogsContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }    
+      
+      #blog-detail-container{
+        flex-direction: column;
+      }
+
+    .footerContent{
+        flex-direction: column;
+    }
+}
