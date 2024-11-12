@@ -1,0 +1,90 @@
+[
+    {
+        "foods":[
+            {
+                "id": 1,
+                "name": "Doce de casca de banana",
+                "image": "https://guiadacozinha.com.br/wp-content/uploads/2020/05/doce-de-casca-de-banana-32404-1.jpg",
+                "ingredientes": [
+                    "5 xícaras (chá) de cascas de banana-nanica bem lavadas e picadas", 
+                    "2 xícaras (chá) de água",
+                    "2 e 1/2 xícaras (chá) de açúcar",
+                    "2 colheres (sopa) de suco de limão",
+                    "Canela em pó a gosto para polvilhar"
+                ],
+                "modo": "Em uma panela, em fogo médio, cozinhe as cascas na água, até amolecerem. Retire do fogo e escorra. Bata no liquidificador as cascas com metade da água do cozimento e passe por uma peneira grossa. Coloque novamente na panela, adicione o açúcar e o suco de limão e volte ao fogo médio, mexendo sempre até desprender do fundo da panela. Coloque em um refratário, sirva gelado."
+            },
+            {
+                "id": 2,
+                "name": "Compota de casca de melão",
+                "image": "https://guiadacozinha.com.br/wp-content/uploads/2020/05/compota-de-casca-de-melao-4693.jpg",
+                "ingredientes": [
+                    "1kg de casca de melão",
+                    "2 xícaras (chá) de água",
+                    "2 xícaras (chá) de açúcar"
+                ],
+                "modo": "Lave muito bem as cascas de melão. Corte em cubinhos, coloque em uma panela com a água e cozinhe por cerca de 15 minutos. Acrescente o açúcar e deixe cozinhar até ficar transparente e engrossar um pouco a calda. Retire do fogo e sirva frio acompanhando sorvetes."
+            },
+            {
+                "id": 3,
+                "name": "Bolo de casca de maçã",
+                "image": "https://guiadacozinha.com.br/wp-content/uploads/2020/05/bolo-de-casca-de-maca-22110-2.jpg",
+                "ingredientes": [
+                    "2 xícaras (chá) de farinha de trigo",
+                    "1 colher (sopa) de fermento em pó",
+                    "2 xícaras (chá) de açúcar",
+                    "1 xícara (chá) de óleo",
+                    "1 colher (sopa) de canela em pó",
+                    "1 xícara (chá) de leite",
+                    "3 ovos",
+                    "Casca de 4 maçãs",
+                    "1 pitada de sal",
+                    "Margarina para untar",
+                    "Açúcar e canela a gosto para polvilhar"
+                ],
+                "modo": "Coloque em uma tigela a farinha e o fermento e reserve. No liquidificador, bata o restante dos ingredientes e misture com a farinha reservada. Coloque em uma fôrma de buraco no meio de 26cm de diâmetro untada e polvilhada com açúcar e canela em pó a gosto. Leve ao forno médio, preaquecido, por 30 minutos ou até que ao enfiar um palito, ele saia limpo. Retire do forno, deixe descansar por 5m, desenforme e polvilhe com açúcar e canela em pó a gosto."
+            },
+            {
+                "id": 4,
+                "name": "Doce de casca de laranja",
+                "image": "https://guiadacozinha.com.br/wp-content/uploads/2020/05/doce-de-casca-de-laranja-29546-1.jpg",
+                "ingredientes": [
+                    "6 laranjas grandes de casca grossa tipo laranja-baiana",
+                    "1 e 1/2 xícara (chá) de açúcar",
+                    "1 canela em pau",
+                    "5 cravos-da-índia inteiros"
+                ],
+                "modo": "Descasque as laranjas bem fino, mantendo o máximo da parte branca intacta. Corte a laranja em gomos e retire a polpa. Deixe as cascas de molho em água por 24 horas trocando a água 4 vezes. Escorra, enxugue e fatie as cascas em tiras finas. Leve-as ao fogo médio, cobertas com água, e ferva por 15 minutos. Escorra. Leve novamente ao fogo médio com o açúcar, a canela e o cravo e cozinhe por 15 minutos ou até a casca amaciar. Deixe esfriar e sirva em seguida."
+            },
+            {
+                "id": 5,
+                "name": "Suco de casca de abacaxi",
+                "image": "https://guiadacozinha.com.br/wp-content/uploads/2020/05/suco-de-casca-de-abacaxi-4700-1-1024x720.jpg",
+                "ingredientes": [
+                    "Casca de 1 abacaxi",
+                    "1 litro de água",
+                    "7 colheres (sopa) de açúcar"
+                ],
+                "modo": "Lave bem a casca do abacaxi, pique e bata no liquidificador com 1/2 litro de água. Coe e bata novamente com a água restante, o açúcar e gelo a gosto. Sirva em seguida."
+            },
+            {
+                "id": 6,
+                "name": "Bolinho de casca de batata com espinafre",
+                "image": "https://guiadacozinha.com.br/wp-content/uploads/2020/05/bolinho-casca-batata-espinafre.jpg",
+                "ingredientes": [
+                    "2 xícaras (chá) de casca de batata cozida e escorrida",
+                    "1/2 xícara (chá) de leite",
+                    "1/2 xícara (chá) de espinafre cozido, espremido e picado",
+                    "4 colheres (sopa) de cebola ralada",
+                    "4 colheres (sopa) de queijo parmesão ralado",
+                    "2 ovos",
+                    "Sal e pimenta-do-reino a gosto",
+                    "1 colher (chá) de fermento em pó",
+                    "2 xícaras (chá) de farinha de trigo (aproximadamente)",
+                    "Óleo para fritar"
+                ],
+                "modo": "Bata no liquidificador a casca com o leite até homogeneizar.Despeje em uma tigela e misture com o espinafre, a cebola, o queijo, os ovos, sal e pimenta.Junte o fermento e a farinha, aos poucos, mexendo até desgrudar da lateral da tigela.Frite colheradas da massa em óleo quente, aos poucos, até dourar.Escorra sobre papel-toalha e sirva."
+            }
+        ]
+    }
+]
