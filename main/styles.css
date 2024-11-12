@@ -281,8 +281,6 @@ p {
    margin-bottom: 1rem;
 }
 
-   
-
 .sectionFood{
    margin-top: 6rem;
    padding: 2rem;
@@ -461,6 +459,7 @@ p {
 #allBlogsContainer{
   display: grid;
   justify-content: center;
+  margin-left: 4rem;
   grid-template-columns: repeat(3, 1fr);  
   gap: 20px;  
   padding: 20px; 
