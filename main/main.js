@@ -1,27 +1,25 @@
-alert("hello")
-
 document.addEventListener("DOMContentLoaded", function(){
-    const toggleButtons = document.querySelectorAll(".toggle-button");
-    const cards = document.querySelectorAll(".cardQuestion .contentCard");
-  
-    for(let i = 1; i < cards.length; i++){
-      cards[i].classList.add("hidden");
-    }
-  
-    toggleButtons.forEach((button, index) => {
-      button.addEventListener("click", () => {
-        const contentCard = cards[index];
-        if(contentCard.classList.contains("hidden")){
-          contentCard.classList.remove("hidden");
-          button.querySelector('i').classList.remove('fa-plus');
-          button.querySelector('i').classList.add('fa-minus');
-        }else{
-          contentCard.classList.add('hidden');
-          button.querySelector('i').classList.remove('fa-minus');
-          button.querySelector('i').classList.add('fa-plus');
-        }
-      })
+  const toggleButtons = document.querySelectorAll(".toggle-button");
+  const cards = document.querySelectorAll(".cardQuestion .contentCard");
+
+  for(let i = 1; i < cards.length; i++){
+    cards[i].classList.add("hidden");
+  }
+
+  toggleButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      const contentCard = cards[index];
+      if(contentCard.classList.contains("hidden")){
+        contentCard.classList.remove("hidden");
+        button.querySelector('i').classList.remove('fa-plus');
+        button.querySelector('i').classList.add('fa-minus');
+      }else{
+        contentCard.classList.add('hidden');
+        button.querySelector('i').classList.remove('fa-minus');
+        button.querySelector('i').classList.add('fa-plus');
+      }
     })
+  })
 })
 
 fetch('blogs.json')
@@ -85,9 +83,11 @@ fetch('blogs.json')
   fetch('food.json')
   .then(response => response.json())
   .then(data => {
+    console.log("Dados recebidos de food.json:", data); 
     if (data && Array.isArray(data) && data[0] && Array.isArray(data[0].foods)) {
       const allFoods = data[0].foods;
-      
+      console.log("Alimentos:", allFoods); 
+
       const allFoodsContainer = document.getElementById('allFoodsContainer');
       if (allFoodsContainer) {
         allFoods.forEach(food => {
