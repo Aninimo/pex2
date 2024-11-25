@@ -533,11 +533,13 @@ p {
     .contentSectionBlog{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     #blogs-container{
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .blogCard {
